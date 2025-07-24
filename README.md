@@ -21,7 +21,7 @@ This repository documents my hands-on experience in a simulated Security Operati
 | False Positive Identification Rate | **100%**          |
 |  Total Alerts Investigated    | 4 alerts         |
 |  Mean Time to Resolve         | 5 minutes        |
-| ⏱ Mean Dwell Time              | 13 minutes       |
+|  Mean Dwell Time              | 13 minutes       |
 
 ---
 
@@ -30,7 +30,6 @@ This repository documents my hands-on experience in a simulated Security Operati
 -  Screenshots of Splunk Dashboard
 - Alert logs from the simulation
 -  Sample JSON event data
--  Annotated phishing indicators
 -  Incident classification summary
 
 ---
@@ -68,7 +67,7 @@ The following SPL (Search Processing Language) queries were used during the inve
 index=firewall action=blocked application="web-browsing"
 | stats count by sourceIP, destIP, url, destPort
 
-ndex=alerts "Inbound Email Containing Suspicious External Link"
+index=alerts "Inbound Email Containing Suspicious External Link"
 | stats count by alert_id, severity, status, timestamp
 
 
