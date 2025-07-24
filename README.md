@@ -13,7 +13,7 @@ This repository documents my hands-on experience in a simulated Security Operati
 
 ---
 
-## 🔍 Key Highlights
+## Key Highlights
 
 | Metric                          | Result           |
 |-------------------------------|------------------|
@@ -28,7 +28,7 @@ This repository documents my hands-on experience in a simulated Security Operati
 ##  Included Artifacts
 
 -  Screenshots of Splunk Dashboard
-- 🗂 Alert logs from the simulation
+- Alert logs from the simulation
 -  Sample JSON event data
 -  Annotated phishing indicators
 -  Incident classification summary
@@ -45,17 +45,6 @@ This repository documents my hands-on experience in a simulated Security Operati
   - **True Positive**
   - **False Positive**
 -  Writing concise incident reports with evidence
-
----
-
-
-##  How to Reproduce (Optional)
-
-> This was a guided simulation on TryHackMe. For similar hands-on practice:
-1. Sign up at [tryhackme.com](https://tryhackme.com)
-2. Enroll in the **SOC Level 1 Learning Path**
-3. Launch the **SOC Simulator Lab**
-4. Follow instructions to investigate alerts using the Splunk interface
 
 ---
 
