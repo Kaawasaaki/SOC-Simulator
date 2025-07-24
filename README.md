@@ -57,4 +57,22 @@ This lab closely mirrors real-world Tier 1 SOC workflows including:
 - Alert enrichment and prioritization
 - Splunk dashboard usage for detection & response
 
+---
+
+## Sample Splunk Queries (SPL)
+
+The following SPL (Search Processing Language) queries were used during the investigation:
+
+
+```spl
+index=firewall action=blocked application="web-browsing"
+| stats count by sourceIP, destIP, url, destPort
+
+ndex=alerts "Inbound Email Containing Suspicious External Link"
+| stats count by alert_id, severity, status, timestamp
+
+
+index=email sourcetype="email_logs" subject="*" body="http*"
+| table _time, sender, recipient, subject, body
+
 
